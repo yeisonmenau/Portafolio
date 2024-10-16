@@ -64,6 +64,50 @@
   border: var(--colorFondo) 0.1rem solid;
   box-shadow: 0px 0px 0.5rem 0px var(--colorFondo);
 }
+/* skill */
+.skills-imagenes img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease ;
+}
+.skills-imagenes{
+  width: 500px;
+  height: 400px;
+}
+.skills-texto{
+  width: 50%;
+}
+.skills-texto h2{
+  font-size: 2rem;
+  font-family: var(--LetraSubtitulo);
+  color: var(--colorLetraSecundario);
+  font-weight: bolder;
+}
+.skills-texto p{
+  font-size: 1rem;
+  font-family: var(--LetraSubtitulo);
+  color: var(--colorLetra);
+}
+
+/* contacto */
+.contacto div h2{
+  font-size: 2rem;
+  font-family: var(--LetraSubtitulo);
+  color: var(--colorLetraSecundario);
+  font-weight: bolder;
+}
+.contacto div p{
+  font-size: 1rem;
+  font-family: var(--LetraSubtitulo);
+  color: var(--colorLetra);
+}
+.contacto div{
+  border: 1px black solid;
+  background-color: var(--colorFondo);
+}
+
 /* Generales */
 
 h1{
@@ -92,15 +136,27 @@ i:hover{
   box-shadow: 0px 0px 20px 0px var(--colorLetraSecundario);
   cursor: pointer;
 }
-
-
+.skills-imagenes img:hover{
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.contacto div:hover{
+  box-shadow: 0px 0px 40px 0px var(--colorFondo) !important;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 992px){
+
   .principal{
     flex-direction: column;
   }
   #navbar-toggler .navbar-brand img{
     display: none;
+  }
+  .skills{
+    flex-direction: column;
   }
 }
 @keyframes AnimacionFoto {

@@ -20,7 +20,8 @@
      <!-- ... -->
     <title>Portafolio</title>
 </head>
-<body>
+<body> 
+
   <!-- Navegacion -->
   <nav class="navbar navbar-expand-md navbar-dark container-fluid mb-5">
     <div class="container-fluid">
@@ -31,16 +32,16 @@
         <a class="navbar-brand" href="#"><img width="50" src="imagenes/logo.png" alt="Logo"></a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">SOBRE MI</a>
+            <a class="nav-link active" aria-current="page" href="#Principal">SOBRE MI</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PROYECTOS</a>
+            <a class="nav-link" href="#Proyectos">PROYECTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SKILLS</a>
+            <a class="nav-link" href="#Skills">SKILLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTO</a>
+            <a class="nav-link" href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -48,7 +49,7 @@
   </nav>
 
   <!-- Principal -->
-  <section class="principal d-flex  container align-items-center mb-5">
+  <section id="Principal" class="principal d-flex  container align-items-center mb-5">
     <div class="principal-main text-md-start">
       <h1>Hola, Soy Yeison Mena.</h1>
       <h2>Soy Analista de Datos y estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia.</h2>
@@ -59,8 +60,9 @@
       <img class="principal-imagen img-fluid" src="./imagenes/Foto-YeisonMena.jpg" alt="Foto Yeison Mena">
     </div>
   </section>
+
    <!-- Proyectos -->
-  <section class="proyectos container mb-5">
+  <section id="Proyectos" class="proyectos container mb-5">
     <div>
       <h2 align="center">PROYECTOS</h2>
       <p align="center" class="mb-5">Todo lo que puedas imaginar lo puedes programar</p>
@@ -105,37 +107,33 @@
         </div>
       </div>
     </div>
-  </section>
-    
+  </section>    
     
   <!-- Skills -->
-  <p id="scrollspyHeading2" align="center">Habilidades</p>
-  <div class="d-flex justify-content-around">
-
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/Sql-logo.svg"  alt="Python">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <section id="Skills" class="skills container d-flex justify-content-between align-items-center flex-nowrap mb-5">
+    <div class="skills-texto">
+      <h2>SKILLS</h2>
+      <p>Soy una persona apasionada por el desarrollo de software y el análisis de datos. Con una sólida formación en bases de datos SQL, Excel, Power BI y Python, me especializo en transformar datos en información valiosa para la toma de decisiones. Mi enfoque combina tanto habilidades técnicas como analíticas, lo que me permite abordar proyectos de software y análisis de datos con creatividad y precisión. Mi objetivo es seguir creciendo en el ámbito tecnológico y contribuir al éxito de los proyectos a través de soluciones innovadoras y eficientes.</p>
     </div>
-  </div>
-   
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/Pythonlogo.svg" class="card-img-top" alt="Python">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="skills-imagenes container-fluid d-flex">
+      <img class="img-fluid" src="imagenes/python.jpg" alt="python skill">
+      <img class="img-fluid" src="imagenes/powerBI.jpg" alt="powerBI skill">
+      <img class="img-fluid" src="imagenes/sql.jpg" alt="sql skill">
+      <img class="img-fluid" src="imagenes/math.jpg" alt="math skill">
     </div>
-  </div> 
+  </section>
 
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/powerBi-logo.svg" class="card-img-top" alt="Python">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div> 
-
-  </div>
-  </div>
-
+  <!-- contacto -->
+  <div id="contacto" class="container py-5" >
+    <section class="contacto row justify-content-center" >
+        <div class="text-center py-4 px-2 shadow position-relative">
+          <h2>CONTACTO</h2>
+          <p>Para mas información detallada puedes contactarme por los siguiente medios.</p>
+          <a href="https://github.com/yeisonmenau" target="_blank"><i class="bi bi-github"></i></a>
+          <a class="mx-3" href="https://www.linkedin.com/in/yeisonmenau/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </section>
+  </div>  
   <!-- footer -->
   <footer class="text-center pt-5">
     <p style="color: white;">&#169; Yeison Mena 14-oct-2024. All rights reserved</p> 
